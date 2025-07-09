@@ -37,7 +37,7 @@ jobs:
       
     - name: Create review app
       uses: CleverCloud/clever-cloud-review-app@v2.0.1
-      env:
+      env:sudo apt 
         CLEVER_SECRET: ${{ secrets.CLEVER_SECRET }}
         CLEVER_TOKEN: ${{ secrets.CLEVER_TOKEN }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
