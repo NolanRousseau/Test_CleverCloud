@@ -45,7 +45,7 @@ jobs:
         GH_CC_RUN_SUCCEEDED_HOOK: ${{ secrets.CC_RUN_SUCCEEDED_HOOK }} # This environment variable will be set on Clever Cloud
       with:
         type: 'docker'
-        set-env: true # Enables the command to set en vars on Clever Cloud
+        set-env: true # Enables the command to set en vars on Clever Cloud.
   
     - name: Quality Checks
       if: github.event_name == 'pull_request'
